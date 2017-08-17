@@ -13,4 +13,11 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
+  'overtrue/laravel-lang' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Overtrue\\LaravelLang\\TranslationServiceProvider',
+    ),
+  ),
 );

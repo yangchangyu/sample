@@ -25,10 +25,11 @@
     21 => 'Illuminate\\View\\ViewServiceProvider',
     22 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     23 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    24 => 'App\\Providers\\AppServiceProvider',
-    25 => 'App\\Providers\\AuthServiceProvider',
-    26 => 'App\\Providers\\EventServiceProvider',
-    27 => 'App\\Providers\\RouteServiceProvider',
+    24 => 'Overtrue\\LaravelLang\\TranslationServiceProvider',
+    25 => 'App\\Providers\\AppServiceProvider',
+    26 => 'App\\Providers\\AuthServiceProvider',
+    27 => 'App\\Providers\\EventServiceProvider',
+    28 => 'App\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -140,11 +141,12 @@
     'redis.connection' => 'Illuminate\\Redis\\RedisServiceProvider',
     'auth.password' => 'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',
     'auth.password.broker' => 'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',
-    'translator' => 'Illuminate\\Translation\\TranslationServiceProvider',
-    'translation.loader' => 'Illuminate\\Translation\\TranslationServiceProvider',
+    'translator' => 'Overtrue\\LaravelLang\\TranslationServiceProvider',
+    'translation.loader' => 'Overtrue\\LaravelLang\\TranslationServiceProvider',
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
+    'Overtrue\\LaravelLang\\Commands\\Publish' => 'Overtrue\\LaravelLang\\TranslationServiceProvider',
   ),
   'when' => 
   array (
@@ -185,6 +187,9 @@
     array (
     ),
     'Laravel\\Tinker\\TinkerServiceProvider' => 
+    array (
+    ),
+    'Overtrue\\LaravelLang\\TranslationServiceProvider' => 
     array (
     ),
   ),
