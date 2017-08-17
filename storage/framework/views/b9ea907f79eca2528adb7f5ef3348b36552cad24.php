@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('title', '注册'); ?>
 
 <?php $__env->startSection('content'); ?>
