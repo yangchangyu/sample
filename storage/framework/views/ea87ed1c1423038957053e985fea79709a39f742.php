@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('title', $user->name); ?>
 <?php $__env->startSection('content'); ?>
 <div class="row">
