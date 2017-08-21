@@ -27,7 +27,7 @@ class SessionsController extends Controller
 
         if(Auth::attempt($credentials,$request->has('remember'))){
             session()->flash('success','welcome!!!');
-            return redirect()->route('users.show',[Auth::user()]);
+            return redirect()->intended(route('users.show',[Auth::user()]));
         }else{
             session()->flash('danger','sorry,pwd not match email');
             return redirect()->back();
@@ -39,6 +39,13 @@ class SessionsController extends Controller
         Auth::logout();
         session()->flash('success','logout');
         return redirect('login');
+    }
+
+    public function __construct()
+    {
+        $this->middleware('guest',[
+            'only' => ['create']
+        ]);
     }
 
 }
